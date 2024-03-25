@@ -15,8 +15,11 @@ steps:
 
 - task: Bash@3
   inputs:
-    filePath: 'C:\softwares\shellnew.sh'
-
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
